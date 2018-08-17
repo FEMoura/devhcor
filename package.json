@@ -1,20 +1,17 @@
 {
   "name": "devhcor",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preversion": "git add .",
+    "version": "git push && git push --tags",
+    "postversion": "npm publish"
   },
   "author": "felipe.moura",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.4",
     "testepedao": "^1.0.0"
-  },
-
-  "scripts": {
-  "preversion": "git add .",
-  "version": "git push && git push --tags && rm -rf build/temp",
-  "postversion": "npm publish"
-}
+  }
 }
