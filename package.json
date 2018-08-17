@@ -1,6 +1,6 @@
 {
   "name": "devhcor",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "testepedao": "^1.0.0"
-  }
+  },
+
+  "scripts": {
+    "version": "git add .",
+  "postversion": "npm publish"
+}
 }
